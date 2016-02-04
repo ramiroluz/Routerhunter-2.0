@@ -2,8 +2,8 @@
  Tool used to find vulnerable routers and devices on the Internet and perform tests
 
 ```
-	          _	          _           _		   		   
-  ___ ___ _ _| |_ ___ ___| |_ _ _ ___| |_ ___ ___ 
+	          _	          _           _
+  ___ ___ _ _| |_ ___ ___| |_ _ _ ___| |_ ___ ___
  |  _| . | | |  _| -_|  _|   | | |   |  _| -_|  _|
  |_| |___|___|_| |___|_| |_|_|___|_|_|_| |___|_|
 				       BR - v2.0
@@ -14,10 +14,10 @@
 [ fb.com/JhonVipNet - twitter.com/jh00nbr - github.com/jh00nbr/ - blog.inurl.com.br - www.youtube.com/c/Mrsinisterboy ]
 
 
-[!] legal disclaimer: Usage of RouterHunterBR for attacking targets without prior mutual 
-consent is illegal. It is the end user's responsibility to obey all applicable local, state and 
+[!] legal disclaimer: Usage of RouterHunterBR for attacking targets without prior mutual
+consent is illegal. It is the end user's responsibility to obey all applicable local, state and
 federal laws.Developers assume no liability and are not responsible for any misuse or damage caused
-by this program.  
+by this program.
 ```
 
 
@@ -33,29 +33,29 @@ by this program.
 
 ### Description
 ------
-  The RouterhunterBR is an automated security tool que finds vulnerabilities and performs tests on routers and vulnerable devices on the Internet. The RouterhunterBR was designed to run over the Internet looking for defined ips tracks or random in order to automatically exploit the vulnerability DNSChanger on home routers.
-  
+  The RouterhunterBR is an automated security tool that looks for vulnerabilities and performs tests on routers and vulnerable devices on the Internet. The RouterhunterBR was designed to run over the Internet looking for defined ips tracks or random in order to automatically exploit the vulnerability DNSChanger on home routers.
+
   The script explores four vulnerabilities in routers
-  
- * Shuttle Tech ADSL Modem-Router 915 WM / Unauthenticated Remote DNS Change Exploit            
+
+ * Shuttle Tech ADSL Modem-Router 915 WM / Unauthenticated Remote DNS Change Exploit
   reference: http://www.exploit-db.com/exploits/35995/
 
- * D-Link DSL-2740R / Unauthenticated Remote DNS Change Exploit           
+ * D-Link DSL-2740R / Unauthenticated Remote DNS Change Exploit
   reference: http://www.exploit-db.com/exploits/35917/
 
- * D-Link DSL-2640B Unauthenticated Remote DNS Change Exploit            
-   reference: http://1337day.com/exploit/23302/ 
- * D-Link DSL-2780B DLink_1.01.14 - Unauthenticated Remote DNS Change           
-   reference: https://www.exploit-db.com/exploits/37237/ 
+ * D-Link DSL-2640B Unauthenticated Remote DNS Change Exploit
+   reference: http://1337day.com/exploit/23302/
+ * D-Link DSL-2780B DLink_1.01.14 - Unauthenticated Remote DNS Change
+   reference: https://www.exploit-db.com/exploits/37237/
 
- * D-Link DSL-2730B AU_2.01 - Authentication Bypass DNS Change            
-   reference: https://www.exploit-db.com/exploits/37240/ 
- * D-Link DSL-526B ADSL2+ AU_2.01 - Unauthenticated Remote DNS Change           
-   reference: https://www.exploit-db.com/exploits/37241/ 
+ * D-Link DSL-2730B AU_2.01 - Authentication Bypass DNS Change
+   reference: https://www.exploit-db.com/exploits/37240/
+ * D-Link DSL-526B ADSL2+ AU_2.01 - Unauthenticated Remote DNS Change
+   reference: https://www.exploit-db.com/exploits/37241/
 
- * DSLink 260E - Authenticated routers - DNS Changer - Bruteforce 
-   reference: https://www.youtube.com/watch?v=tNjy91g2Rak                             
-   http://blog.inurl.com.br/2015/03/dslink-260e-defaut-passwords-dns-change_17.html 
+ * DSLink 260E - Authenticated routers - DNS Changer - Bruteforce
+   reference: https://www.youtube.com/watch?v=tNjy91g2Rak
+   http://blog.inurl.com.br/2015/03/dslink-260e-defaut-passwords-dns-change_17.html
 
 ### Requeriments
 ```
@@ -81,7 +81,7 @@ from datetime import datetime
 
 ```
 Random ips
-python routerhunter.py --dns1 8.8.8.8 --dns2 8.8.4.8 --randomip --limitip 10 --threads 10                      
+python routerhunter.py --dns1 8.8.8.8 --dns2 8.8.4.8 --randomip --limitip 10 --threads 10
 python routerhunter.py --dns1 8.8.8.8 --dns2 8.8.4.8 -rip -lmtip 10 --threads 10
 
 ```
@@ -102,7 +102,7 @@ Brute force with users and passwords on routers that requires authentication, fo
 python routerhunter.py --dns1 8.8.8.8 --dns2 8.8.4.4 --range 177.106.19.65-70 --bruteforce --threads 10
 ```
 
-### Screenshots 
+### Screenshots
 ![rip](http://i.imgur.com/CAhvz1T.png)
 ![range](http://i.imgur.com/sA1IKTp.png)
 ![brute](http://i.imgur.com/IhtaZhw.png)
